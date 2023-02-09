@@ -6,7 +6,7 @@ dataset_id = 'globant-376521.Globant'
 table_id = 'globant-376521.Globant.jobs'
 bucket_name ='globant_bucket'
 
-destination_uri = 'gs://{}/{}'.format(bucket_name, 'fileName')
+destination_uri = 'gs://{}/{}'.format(globant_bucket, 'jobs')
 dataset_ref = client.dataset(dataset_id, project=project)
 table_ref = dataset_ref.table(table_id)
 
